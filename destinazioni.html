@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cosmoproject - Home page</title>
+
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/all.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+     <link rel="icon" href="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIuMDAxIDUxMi4wMDEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMi4wMDEgNTEyLjAwMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjhweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ5Ny4wODEsMTQuOTE4QzQ4Ni41MzgsNC4zNzUsNDcxLjk2My0xLDQ1Ny4xMTYsMC4xNTRjLTQxLjI5MywzLjIyNC04MS44MjUsMTIuOTI1LTEyMC40NzEsMjguODMzICAgIGMtMzYuNTUyLDE1LjA0NS03Mi4wNTMsMzUuOTA4LTEwNC43OTMsNjIuOTkxYy0xOS42OSwxNi4yODgtMzcuNjEsMzQuMTU5LTUzLjY1NCw1My4zNzkgICAgYy00OS44MDEsMy4yNy05Ny4xNywyNS4xMjMtMTM0LjEyOCw2Mi4wODJjLTE3LjQ4NSwxNy40ODUtMzEuNzY2LDM3Ljc0MS00Mi40NDgsNjAuMjA2Yy0zLjA0Miw2LjM5OS0xLjcyOCwxNC4wMjEsMy4yODIsMTkuMDMgICAgYzMuMjEyLDMuMjEyLDcuNDk2LDQuOTA1LDExLjg0NCw0LjkwNWMyLjQzNSwwLDQuODktMC41MzEsNy4xODYtMS42MjNjMjYuMjEzLTEyLjQ2NCw1NC44MzUtMTguMDg2LDgyLjM4Mi0xNi40MDMgICAgYy0xLjk3NCw1LjgzNy0zLjgyMiwxMS43MjktNS41MzMsMTcuNjc3bC01My40ODksMzIuMDkzYy05LjM0NCw1LjYwNi0xMC45MTQsMTguNTEtMy4yMjUsMjYuMTk5bDI0LjcwMywyNC43MDMgICAgYy03Ljc3NiwxMC4xNzMtMTcuMjYzLDI0LjA1Ni0yNS4zMTYsMzcuOTM4Yy03LjE2OSwxMi4zNTgtMTIuMjk2LDIzLjEzMi0xNS4yNCwzMi4wMjJjLTUuMjExLDE1LjczOC0zLjg2MSwyNy43MTEsNC4wMTIsMzUuNTgzICAgIGM5LjMwNyw5LjMwNywyMi45OTEsOC4xODMsMzUuNTgzLDQuMDEyYzguODg5LTIuOTQ0LDE5LjY2My04LjA3MSwzMi4wMjItMTUuMjRjMTMuODgyLTguMDUyLDI3Ljc2NC0xNy41MzksMzcuOTM4LTI1LjMxNSAgICBsMjQuNzAzLDI0LjcwM2M3LjY2OCw3LjY2OCwyMC41NzEsNi4xNTQsMjYuMTk5LTMuMjI1bDMyLjA5My01My40ODljNS45NDgtMS43MSwxMS44NC0zLjU1OSwxNy42NzgtNS41MzMgICAgYzEuNjgyLDI3LjU0Ni0zLjk0MSw1Ni4xNjgtMTYuNDAzLDgyLjM4MmMtMy4wNDMsNi4zOTktMS43MjgsMTQuMDIxLDMuMjgyLDE5LjAzMWM1LjAxMSw1LjAxLDEyLjYzLDYuMzI0LDE5LjAzMSwzLjI4MiAgICBjMjIuNDY2LTEwLjY4Miw0Mi43MjItMjQuOTY0LDYwLjIwNi00Mi40NDhjMzYuOTU3LTM2Ljk1Nyw1OC44MTItODQuMzI3LDYyLjA4Mi0xMzQuMTI4YzE5LjIyLTE2LjA0MywzNy4wOS0zMy45NjQsNTMuMzc5LTUzLjY1NCAgICBjMjcuMDgzLTMyLjczOSw0Ny45NDQtNjguMjM4LDYyLjk5MS0xMDQuNzkxYzE1LjkwOC0zOC42NDYsMjUuNjA4LTc5LjE3OCwyOC44MzMtMTIwLjQ3MSAgICBDNTEzLjAwNSw0MC4wMjgsNTA3LjYyMywyNS40Niw0OTcuMDgxLDE0LjkxOHogTTU2LjAxMSwyNDQuMDM4YzMuNjk4LTQuNDgzLDcuNjEzLTguNzkyLDExLjc0MS0xMi45MTkgICAgYzIzLjQ2My0yMy40NjMsNTEuOC0zOS43MDksODIuMTUyLTQ3LjQ4MmMtMTEuODgxLDE4LjI1NC0yMi4yNDUsMzcuNDQ2LTMxLjAwNSw1Ny40MzQgICAgQzk4LjIxOSwyMzguNjMzLDc2LjkxNCwyMzkuNjY0LDU2LjAxMSwyNDQuMDM4eiBNODkuNDE3LDQzNS43NTljLTEyLjc5Miw3Ljg0OC0yMS43NywxMi4yMTQtMjcuODE5LDE0LjY0MyAgICBjMi40MjgtNi4wNDksNi43OTUtMTUuMDI3LDE0LjY0My0yNy44MTljNS42Mi05LjE2MSwxMS40ODgtMTcuNzE0LDE2LjQ0Ny0yNC40NDNsMjEuMTcyLDIxLjE3MiAgICBDMTA3LjEzMSw0MjQuMjcxLDk4LjU3Nyw0MzAuMTQsODkuNDE3LDQzNS43NTl6IE0xNzAuOTkyLDQyOS4wODJsLTg4LjA3NC04OC4wNzRsMjkuNjAxLTE3Ljc2MWw3Ni4yMzQsNzYuMjM0TDE3MC45OTIsNDI5LjA4MnogICAgIE0yNjcuOTYxLDQ1NS45ODdjNC4zNzUtMjAuOTAyLDUuNDA2LTQyLjIwOSwyLjk2Ny02Mi44ODZjMTkuOTg4LTguNzYxLDM5LjE4LTE5LjEyNCw1Ny40MzMtMzEuMDA1ICAgIEMzMTguOTIsMzk4Ljk2NCwyOTcuMDY1LDQzMS45ODMsMjY3Ljk2MSw0NTUuOTg3eiBNMjE0LjczLDM3OC4wOTZsLTgwLjgyNy04MC44MjZjMjYuODE3LTkwLjE2Niw4Ny4xNTgtMTY2Ljk0MiwxNjguNzkzLTIxNC41NyAgICBsMTI2LjYwMiwxMjYuNjAyQzM4Mi44MTcsMjg4Ljk3NiwzMDYuOTk4LDM1MC42NTQsMjE0LjczLDM3OC4wOTZ6IE00NzguNDU3LDUyLjI3N2MtMy40NjgsNDQuNDIyLTE0Ljg4Niw4Ni45MDctMzIuOTI1LDEyNS44OTggICAgTDMzMy44MjUsNjYuNDY4YzM4Ljk5MS0xOC4wMzksODEuNDc2LTI5LjQ1NywxMjUuODk4LTMyLjkyNWM1LjE1Ni0wLjQwNiwxMC4wMTMsMS4zOTMsMTMuNjc3LDUuMDU2ICAgIEM0NzcuMDY0LDQyLjI2Myw0NzguODYsNDcuMTIsNDc4LjQ1Nyw1Mi4yNzd6IiBmaWxsPSIjRkZEQTQ0Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzQwLjA4NCwxNzEuOTE2Yy0yNi4xNDctMjYuMTQ4LTY4LjU3Ni0yNi4xNS05NC43MjQsMGMtMjYuMTE1LDI2LjExNi0yNi4xMTUsNjguNjA4LDAsOTQuNzI0ICAgIGMyNi4xMTQsMjYuMTE2LDY4LjYwOCwyNi4xMTcsOTQuNzI0LDBDMzY2LjE5OSwyNDAuNTI1LDM2Ni4xOTksMTk4LjAzMSwzNDAuMDg0LDE3MS45MTZ6IE0zMTYuNDAzLDI0Mi45NTkgICAgYy0xMy4wNTgsMTMuMDU3LTM0LjMwNCwxMy4wNTctNDcuMzYzLDBjLTEzLjA1OC0xMy4wNTgtMTMuMDU4LTM0LjMwNCwwLTQ3LjM2M2MxMy4wNTktMTMuMDYsMzQuMzAyLTEzLjA2LDQ3LjM2MiwwICAgIEMzMjkuNDYsMjA4LjY1NCwzMjkuNDYsMjI5LjkwMiwzMTYuNDAzLDI0Mi45NTl6IiBmaWxsPSIjRkZEQTQ0Ii8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+
+
+
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body id="page-top">
+
+    <!-- Barra Navigazione -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html#page-top" style="font-family: 'Ubuntu', sans-serif;">Cosmoproject&nbsp;<i class="fa fa-rocket"></i></a>
+          <ul class="navbar-nav text-uppercase ml-auto">
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#top">Destinazioni</a>
+            </li>
+            <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="planetario/planetario.html">Planetario</a>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=nessuno">Prenota</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#team">Team</a>
+            </li>
+
+          </ul>
+
+      </div>
+    </nav>
+
+
+
+    <!-- Card Destinazioni  -->
+    <section class="bg-light" id="destinazioni" style="padding:5% 0;">
+      <div class = "container" style="margin-top:8%;margin-bottom:5%;" align="center" id="top">
+            <div id="records" ></div>
+
+            <p>
+                <input style="width:40%;" type="button" class="btn btn-lg btn-outline-success btn-block" id = "getusers" value="Scopri i pianeti più prenotati!" onclick="return refresh()">
+            </p>
+
+        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Destinazioni</h2>
+            <h3 class="section-subheading text-muted">Scegli la meta che fa per te.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-5 destinazioni-item">
+            <a class="destinazioni-link" data-toggle="modal" href="#destinazioniModal1">
+              <div class="destinazioni-hover">
+                <div class="destinazioni-hover-content">
+                </div>
+              </div>
+              <img class="img-fluid" src="immagini/pianeti/Mercurio.png" alt="">
+            </a>
+
+          </div>
+           <div class="col-md-4 col-sm-5 destinazioni-item">
+            <a class="destinazioni-link" data-toggle="modal" href="#destinazioniModal2">
+              <div class="destinazioni-hover">
+                <div class="destinazioni-hover-content">
+                </div>
+              </div>
+              <img class="img-fluid" src="immagini/pianeti/Venere.png" alt="">
+            </a>
+
+          </div>
+          <div class="col-md-4 col-sm-5 destinazioni-item">
+
+            <a class="destinazioni-link" data-toggle="modal" href="#destinazioniModal3">
+              <div class="destinazioni-hover">
+                <div class="destinazioni-hover-content">
+
+                </div>
+              </div>
+              <img class="img-fluid" src="immagini/pianeti/Luna.png" alt="">
+            </a>
+
+          </div>
+
+          <div class="col-md-4 col-sm-5 destinazioni-item">
+            <a class="destinazioni-link" data-toggle="modal" href="#destinazioniModal4">
+              <div class="destinazioni-hover">
+                <div class="destinazioni-hover-content">
+
+                </div>
+              </div>
+              <img class="img-fluid" src="immagini/pianeti/Terra.png" alt="">
+            </a>
+
+          </div>
+          <div class="col-md-4 col-sm-5 destinazioni-item">
+            <a class="destinazioni-link" data-toggle="modal" href="#destinazioniModal5">
+              <div class="destinazioni-hover">
+                <div class="destinazioni-hover-content">
+                </div>
+              </div>
+              <img class="img-fluid" src="immagini/pianeti/Marte.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-5 destinazioni-item">
+            <a class="destinazioni-link" data-toggle="modal" href="#destinazioniModal6">
+              <div class="destinazioni-hover">
+                <div class="destinazioni-hover-content">
+                </div>
+              </div>
+              <img class="img-fluid" src="immagini/pianeti/Giove.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-5 destinazioni-item">
+            <a class="destinazioni-link" data-toggle="modal" href="#destinazioniModal7">
+              <div class="destinazioni-hover">
+                <div class="destinazioni-hover-content">
+                </div>
+              </div>
+              <img class="img-fluid" src="immagini/pianeti/Saturno.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-5 destinazioni-item">
+            <a class="destinazioni-link" data-toggle="modal" href="#destinazioniModal8">
+              <div class="destinazioni-hover">
+                <div class="destinazioni-hover-content">
+                </div>
+              </div>
+              <img class="img-fluid" src="immagini/pianeti/Urano.png" alt="">
+            </a>
+
+          </div>
+           <div class="col-md-4 col-sm-5 destinazioni-item">
+            <a class="destinazioni-link" data-toggle="modal" href="#destinazioniModal9">
+              <div class="destinazioni-hover">
+                <div class="destinazioni-hover-content">
+                </div>
+              </div>
+              <img class="img-fluid" src="immagini/pianeti/Nettuno.png" alt="">
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="text-left">
+            <span class="copyright">Copyright &copy; Progetto LTW 2018</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Popup Mercurio -->
+    <div class="destinazioni-modal modal fade" id="destinazioniModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+
+                  <h2 class="text-uppercase">Mercurio</h2>
+                  <br>
+                  <div style="float: left; text-align: center; width: 45%;">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0KBjnNuhRHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                      <div style="float: right; text-align: left; width: 45%;">
+                          Mercurio è il primo pianeta del sistema solare e il più vicino al Sole.
+                          È il più piccolo e la sua orbita è la più eccentrica, ovvero la meno circolare, degli otto pianeti.
+                          Mercurio orbita in senso antiorario, come tutti gli altri pianeti del Sistema Solare, a una distanza media di 0,3871 UA dal Sole con un periodo siderale di 87,969 giorni terrestri.
+                          La superficie di Mercurio sperimenta la maggiore escursione termica tra tutti i pianeti, con temperature che vanno da 100 K (-173 °C) della notte a 700 K (427 °C) del dì.
+                          Ciò è dovuto all'assenza dell'atmosfera che se presente svolgerebbe un ruolo nella ridistribuzione del calore.<br>
+                          La superficie fortemente craterizzata indica che Mercurio è geologicamente inattivo da miliardi di anni.
+                        </div>
+                      <div style="clear: both;">
+                  </div>
+                  <br>
+                  <a class="btn btn-primary" href="paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Mercurio">Prenota subito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Popup Venere -->
+    <div class="destinazioni-modal modal fade" id="destinazioniModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase mb-4">Venere</h2>
+                  <div style="float: left; text-align: center; width: 45%;">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvXa1n9fjow?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                      <div style="float: right; text-align: left; width: 45%;">
+                        Venere è il secondo pianeta del Sistema solare in ordine di distanza dal Sole con un'orbita quasi circolare che lo porta a compiere una rivoluzione in 224,7 giorni terrestri.<br>
+                        Con una magnitudine massima di −4,6, è il corpo più luminoso nel cielo notturno dopo la Luna e per questo motivo è conosciuto fin dall'antichità.
+                        E' un pianeta terrestre ed a volte è definito il "gemello" della Terra, cui è molto simile per dimensioni e massa. Tuttavia è piuttosto differente, infatti Venere possiede un'atmosfera costituita principalmente da anidride carbonica, molto più densa di quella terrestre, con una pressione al livello del suolo pari a 92 atm.
+                        La densità e la composizione dell'atmosfera creano un impressionante effetto serra che rende Venere il pianeta più caldo del sistema solare.
+                      </div>
+                      <div style="clear: both;">
+                  </div>
+                  <br>
+                  <a class="btn btn-primary" type="button"href="paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Venere">Prenota ora</a>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Popup Luna -->
+    <div class="destinazioni-modal modal fade" id="destinazioniModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase mb-4">Luna</h2>
+                  <div style="float: left; text-align: center; width: 45%;">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6AviDjR9mmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                      <div style="float: right; text-align: left; width: 45%;">
+                        La Luna è un satellite naturale, l'unico della Terra.<br>
+                        Orbita a una distanza media di circa 384 400 km dalla Terra, sufficientemente vicina da essere osservabile a occhio nudo, il che rende possibile distinguerne alcuni rilievi sulla superficie.<br>
+                        Essendo in rotazione sincrona rivolge sempre la stessa faccia verso la Terra e il suo lato nascosto è rimasto sconosciuto fino al periodo delle esplorazioni spaziali.<br>
+                        La faccia visibile della Luna è caratterizzata dalla presenza di circa 300 000 crateri da impatto (contando quelli con un diametro di almeno 1 km).<br>
+                        Il cratere lunare più grande è il bacino Polo Sud-Aitken, che ha un diametro di circa 2 500 km, è profondo 13 km e occupa la parte meridionale della faccia nascosta.
+                      </div>
+                      <div style="clear: both;">
+                  </div>
+                  <br>
+                  <a class="btn btn-primary" type="button" href="paginaPrenotazioni/prenotazioni/prenotazioniLuna.php?pianeta=Luna">Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Popup Terra -->
+    <div class="destinazioni-modal modal fade" id="destinazioniModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+
+                  <h2 class="text-uppercase mb-4">Terra</h2>
+                  <div style="float: left; text-align: center; width: 45%;">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aU6pxSNDPhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                      <div style="float: right; text-align: left; width: 45%;">
+                        La Terra è il terzo pianeta in ordine di distanza dal Sole e il più grande dei pianeti terrestri del sistema solare, sia per massa sia per diametro.<br>
+                        Sulla sua superficie, si trova acqua in tutti e tre gli stati (solido, liquido e gassoso) e un'atmosfera composta in prevalenza d'azoto e ossigeno che, insieme al campo magnetico che avvolge il pianeta, protegge la Terra dai raggi cosmici e dalle radiazioni solari.<br>
+                        Le condizioni atmosferiche primordiali sono state alterate in maniera preponderante dalla presenza di forme di vita che hanno creato un diverso equilibrio ecologico plasmando la superficie del pianeta. Circa il 71% della superficie è coperta da oceani di acqua salata e il restante 29% è rappresentato dai continenti e dalle isole.
+                      </div>
+                      <div style="clear: both;">
+                  </div>
+                  <br>
+                  <a class="btn btn-primary" type="button" href="paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Terra">Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Popup Marte -->
+    <div class="destinazioni-modal modal fade" id="destinazioniModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase mb-4">Marte</h2>
+                  <div style="float: left; text-align: center; width: 45%;">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/D8pnmwOXhoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                  </div>
+                      <div style="float: right; text-align: left; width: 45%;">
+                          Marte è il quarto pianeta del sistema solare in ordine di distanza dal Sole; è visibile ad occhio nudo ed è l'ultimo dei pianeti di tipo terrestre dopo Mercurio, Venere e la Terra. Chiamato il Pianeta rosso a causa del suo colore caratteristico dovuto alle grandi quantità di ossido di ferro che lo ricoprono.<br>
+                          Pur presentando temperature medie superficiali piuttosto basse (tra −120 °C e −14 °C), il pianeta è il più simile alla Terra tra quelli del sistema solare. Le sue dimensioni sono intermedie fra quelle della Terra e della Luna, e presenta un'inclinazione dell'asse di rotazione e durata del giorno simili a quelle terrestri. La sua superficie presenta formazioni vulcaniche, calotte polari e formazioni geologiche che vi suggeriscono la presenza di un'idrosfera in un lontano passato. </div>
+                      <div style="clear: both;">
+                  </div>
+                  <br>
+                  <a class="btn btn-primary" type="button" href="paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Marte">Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Popup Giove -->
+    <div class="destinazioni-modal modal fade" id="destinazioniModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase mb-4">Giove</h2>
+                  <div style="float: left; text-align: center; width: 45%;">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KlP3pqvp8eI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                      <div style="float: right; text-align: left; width: 45%;">
+                          Giove è il quinto pianeta del sistema solare in ordine di distanza dal Sole e il più grande di tutto il sistema planetario: la sua massa corrisponde a 2 volte e mezzo la somma di quelle di tutti gli altri pianeti messi insieme. Giove ha una composizione simile a quella del Sole.<br>
+                          A causa delle sue dimensioni e della composizione simile a quella solare, Giove è stato considerato per lungo tempo una "stella fallita": in realtà solamente se avesse avuto l'opportunità di accrescere la propria massa sino a 75-80 volte quella attuale il suo nucleo avrebbe ospitato le condizioni di temperatura e pressione favorevoli all'innesco delle reazioni di fusione dell'idrogeno in elio, il che avrebbe reso il sistema solare un sistema stellare binario. </div>
+                      <div style="clear: both;">
+                  </div>
+                  <br>
+                  <a class="btn btn-primary" type="button" href="paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Giove">Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Popup Saturno -->
+    <div class="destinazioni-modal modal fade" id="destinazioniModal7" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase mb-4">Saturno</h2>
+                  <div style="float: left; text-align: center; width: 45%;">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/epZdZaEQhS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                      <div style="float: right; text-align: left; width: 45%;">
+                          Saturno è il sesto pianeta del sistema solare in ordine di distanza dal Sole e il secondo pianeta più massiccio dopo Giove. Con un raggio medio 9,5 volte quello della Terra e una massa 95 volte superiore a quella terrestre Saturno, con Giove, Urano e Nettuno, è classificato come gigante gassoso.<br>
+                          Il nome deriva dall'omonimo dio della mitologia romana, omologo del titano greco Crono. Saturno ha un esteso e vistoso sistema di anelli che consiste principalmente in particelle di ghiaccio e polveri di silicati. Della sessantina di lune conosciute che orbitano intorno al pianeta, Titano è la maggiore ed anche l'unica luna del sistema solare ad avere un'atmosfera significativa.</div>
+                      <div style="clear: both;">
+                  </div>
+                  <br>
+                  <a class="btn btn-primary" type="button" href="paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Saturno">Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Popup Urano -->
+    <div class="destinazioni-modal modal fade" id="destinazioniModal8" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase mb-4">Urano</h2>
+                  <div style="float: left; text-align: center; width: 45%;">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6udH9mjjSXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                      <div style="float: right; text-align: left; width: 45%;">
+                          Urano è il settimo pianeta del sistema solare in ordine di distanza dal Sole, il terzo per diametro e il quarto per massa. La composizione chimica di Urano è simile a quella di Nettuno ed entrambi hanno una composizione differente rispetto a Giove e Saturno. Per questa ragione gli astronomi talvolta preferiscono riferirsi a questi due pianeti trattandoli come i "giganti ghiacciati".<br>
+                          Porta il nome del dio greco del cielo Urano, padre di Saturno, a sua volta padre di Giove. Urano possiede un sistema di anelli planetari, una magnetosfera e numerosi satelliti; visti dalla Terra, a causa dell'inclinazione del pianeta, i suoi anelli possono talvolta apparire come un sistema concentrico che circonda il pianeta, oppure possono apparire di taglio.</div>
+                      <div style="clear: both;">
+                  </div>
+                  <br>
+                  <a class="btn btn-primary" type="button" href="paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Urano">Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Popup Nettuno -->
+    <div class="destinazioni-modal modal fade" id="destinazioniModal9" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase mb-4">Nettuno</h2>
+                  <div style="float: left; text-align: center; width: 45%;">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/V81wSDe4usY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                      <div style="float: right; text-align: left; width: 45%;">
+                          Nettuno è l'ottavo e più lontano pianeta del Sistema solare partendo dal Sole. Si tratta del quarto pianeta più grande, considerando il suo diametro, e il terzo se si considera la sua massa. Nettuno ha 17 volte la massa della Terra ed è leggermente più massiccio del suo quasi-gemello Urano, la cui massa è uguale a 15 masse terrestri, ma è meno denso rispetto a Nettuno.<br>
+                          Il nome del pianeta è dedicato al dio romano del mare. <br> Nettuno possiede i venti più forti di ogni altro pianeta nel Sistema Solare. Sono state misurate raffiche a velocità superiori ai 2 100 km/h. La superficie fortemente craterizzata indica che Mercurio è geologicamente inattivo da miliardi di anni. </div>
+                      <div style="clear: both;">
+                  </div>
+                  <br>
+                  <a class="btn btn-primary" type="button" href="paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Nettuno">Prenota ora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/style.js"></script>
+
+
+  </body>
+
+</html>

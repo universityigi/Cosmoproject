@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title dir="ltr">Cosmoproject - Planetario</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+    <link rel="icon" href="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIuMDAxIDUxMi4wMDEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMi4wMDEgNTEyLjAwMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjhweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ5Ny4wODEsMTQuOTE4QzQ4Ni41MzgsNC4zNzUsNDcxLjk2My0xLDQ1Ny4xMTYsMC4xNTRjLTQxLjI5MywzLjIyNC04MS44MjUsMTIuOTI1LTEyMC40NzEsMjguODMzICAgIGMtMzYuNTUyLDE1LjA0NS03Mi4wNTMsMzUuOTA4LTEwNC43OTMsNjIuOTkxYy0xOS42OSwxNi4yODgtMzcuNjEsMzQuMTU5LTUzLjY1NCw1My4zNzkgICAgYy00OS44MDEsMy4yNy05Ny4xNywyNS4xMjMtMTM0LjEyOCw2Mi4wODJjLTE3LjQ4NSwxNy40ODUtMzEuNzY2LDM3Ljc0MS00Mi40NDgsNjAuMjA2Yy0zLjA0Miw2LjM5OS0xLjcyOCwxNC4wMjEsMy4yODIsMTkuMDMgICAgYzMuMjEyLDMuMjEyLDcuNDk2LDQuOTA1LDExLjg0NCw0LjkwNWMyLjQzNSwwLDQuODktMC41MzEsNy4xODYtMS42MjNjMjYuMjEzLTEyLjQ2NCw1NC44MzUtMTguMDg2LDgyLjM4Mi0xNi40MDMgICAgYy0xLjk3NCw1LjgzNy0zLjgyMiwxMS43MjktNS41MzMsMTcuNjc3bC01My40ODksMzIuMDkzYy05LjM0NCw1LjYwNi0xMC45MTQsMTguNTEtMy4yMjUsMjYuMTk5bDI0LjcwMywyNC43MDMgICAgYy03Ljc3NiwxMC4xNzMtMTcuMjYzLDI0LjA1Ni0yNS4zMTYsMzcuOTM4Yy03LjE2OSwxMi4zNTgtMTIuMjk2LDIzLjEzMi0xNS4yNCwzMi4wMjJjLTUuMjExLDE1LjczOC0zLjg2MSwyNy43MTEsNC4wMTIsMzUuNTgzICAgIGM5LjMwNyw5LjMwNywyMi45OTEsOC4xODMsMzUuNTgzLDQuMDEyYzguODg5LTIuOTQ0LDE5LjY2My04LjA3MSwzMi4wMjItMTUuMjRjMTMuODgyLTguMDUyLDI3Ljc2NC0xNy41MzksMzcuOTM4LTI1LjMxNSAgICBsMjQuNzAzLDI0LjcwM2M3LjY2OCw3LjY2OCwyMC41NzEsNi4xNTQsMjYuMTk5LTMuMjI1bDMyLjA5My01My40ODljNS45NDgtMS43MSwxMS44NC0zLjU1OSwxNy42NzgtNS41MzMgICAgYzEuNjgyLDI3LjU0Ni0zLjk0MSw1Ni4xNjgtMTYuNDAzLDgyLjM4MmMtMy4wNDMsNi4zOTktMS43MjgsMTQuMDIxLDMuMjgyLDE5LjAzMWM1LjAxMSw1LjAxLDEyLjYzLDYuMzI0LDE5LjAzMSwzLjI4MiAgICBjMjIuNDY2LTEwLjY4Miw0Mi43MjItMjQuOTY0LDYwLjIwNi00Mi40NDhjMzYuOTU3LTM2Ljk1Nyw1OC44MTItODQuMzI3LDYyLjA4Mi0xMzQuMTI4YzE5LjIyLTE2LjA0MywzNy4wOS0zMy45NjQsNTMuMzc5LTUzLjY1NCAgICBjMjcuMDgzLTMyLjczOSw0Ny45NDQtNjguMjM4LDYyLjk5MS0xMDQuNzkxYzE1LjkwOC0zOC42NDYsMjUuNjA4LTc5LjE3OCwyOC44MzMtMTIwLjQ3MSAgICBDNTEzLjAwNSw0MC4wMjgsNTA3LjYyMywyNS40Niw0OTcuMDgxLDE0LjkxOHogTTU2LjAxMSwyNDQuMDM4YzMuNjk4LTQuNDgzLDcuNjEzLTguNzkyLDExLjc0MS0xMi45MTkgICAgYzIzLjQ2My0yMy40NjMsNTEuOC0zOS43MDksODIuMTUyLTQ3LjQ4MmMtMTEuODgxLDE4LjI1NC0yMi4yNDUsMzcuNDQ2LTMxLjAwNSw1Ny40MzQgICAgQzk4LjIxOSwyMzguNjMzLDc2LjkxNCwyMzkuNjY0LDU2LjAxMSwyNDQuMDM4eiBNODkuNDE3LDQzNS43NTljLTEyLjc5Miw3Ljg0OC0yMS43NywxMi4yMTQtMjcuODE5LDE0LjY0MyAgICBjMi40MjgtNi4wNDksNi43OTUtMTUuMDI3LDE0LjY0My0yNy44MTljNS42Mi05LjE2MSwxMS40ODgtMTcuNzE0LDE2LjQ0Ny0yNC40NDNsMjEuMTcyLDIxLjE3MiAgICBDMTA3LjEzMSw0MjQuMjcxLDk4LjU3Nyw0MzAuMTQsODkuNDE3LDQzNS43NTl6IE0xNzAuOTkyLDQyOS4wODJsLTg4LjA3NC04OC4wNzRsMjkuNjAxLTE3Ljc2MWw3Ni4yMzQsNzYuMjM0TDE3MC45OTIsNDI5LjA4MnogICAgIE0yNjcuOTYxLDQ1NS45ODdjNC4zNzUtMjAuOTAyLDUuNDA2LTQyLjIwOSwyLjk2Ny02Mi44ODZjMTkuOTg4LTguNzYxLDM5LjE4LTE5LjEyNCw1Ny40MzMtMzEuMDA1ICAgIEMzMTguOTIsMzk4Ljk2NCwyOTcuMDY1LDQzMS45ODMsMjY3Ljk2MSw0NTUuOTg3eiBNMjE0LjczLDM3OC4wOTZsLTgwLjgyNy04MC44MjZjMjYuODE3LTkwLjE2Niw4Ny4xNTgtMTY2Ljk0MiwxNjguNzkzLTIxNC41NyAgICBsMTI2LjYwMiwxMjYuNjAyQzM4Mi44MTcsMjg4Ljk3NiwzMDYuOTk4LDM1MC42NTQsMjE0LjczLDM3OC4wOTZ6IE00NzguNDU3LDUyLjI3N2MtMy40NjgsNDQuNDIyLTE0Ljg4Niw4Ni45MDctMzIuOTI1LDEyNS44OTggICAgTDMzMy44MjUsNjYuNDY4YzM4Ljk5MS0xOC4wMzksODEuNDc2LTI5LjQ1NywxMjUuODk4LTMyLjkyNWM1LjE1Ni0wLjQwNiwxMC4wMTMsMS4zOTMsMTMuNjc3LDUuMDU2ICAgIEM0NzcuMDY0LDQyLjI2Myw0NzguODYsNDcuMTIsNDc4LjQ1Nyw1Mi4yNzd6IiBmaWxsPSIjRkZEQTQ0Ii8+Cgk8L2c+CjwvZz4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzQwLjA4NCwxNzEuOTE2Yy0yNi4xNDctMjYuMTQ4LTY4LjU3Ni0yNi4xNS05NC43MjQsMGMtMjYuMTE1LDI2LjExNi0yNi4xMTUsNjguNjA4LDAsOTQuNzI0ICAgIGMyNi4xMTQsMjYuMTE2LDY4LjYwOCwyNi4xMTcsOTQuNzI0LDBDMzY2LjE5OSwyNDAuNTI1LDM2Ni4xOTksMTk4LjAzMSwzNDAuMDg0LDE3MS45MTZ6IE0zMTYuNDAzLDI0Mi45NTkgICAgYy0xMy4wNTgsMTMuMDU3LTM0LjMwNCwxMy4wNTctNDcuMzYzLDBjLTEzLjA1OC0xMy4wNTgtMTMuMDU4LTM0LjMwNCwwLTQ3LjM2M2MxMy4wNTktMTMuMDYsMzQuMzAyLTEzLjA2LDQ3LjM2MiwwICAgIEMzMjkuNDYsMjA4LjY1NCwzMjkuNDYsMjI5LjkwMiwzMTYuNDAzLDI0Mi45NTl6IiBmaWxsPSIjRkZEQTQ0Ii8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+
+  <body class="opening hide-UI view-2D zoom-large data-close controls-close" id="animation">
+
+    
+    <div id="data">
+      <a class="sun" title="sun" href="#sunspeed">Sole</a>
+      <a id="golink1" class="mercury" title="mercury" href="../paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Mercurio">Mercurio</a>
+      <a id="golink2" class="venus" title="venus" href="../paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Venere">Venere</a>
+      <a id="golink4" class="earth active" title="earth" href="../paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Terra">Terra</a>
+      <a id="golink5" class="mars" title="mars" href="../paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Marte">Marte</a>
+      <a id="golink6" class="jupiter" title="jupiter" href="../paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Giove">Giove</a>
+      <a id="golink7" class="saturn" title="saturn" href="../paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Saturno">Saturno</a>
+      <a id="golink8" class="uranus" title="uranus" href="../paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Urano">Urano</a>
+      <a id="golink3" class="neptune" title="neptune" href="../paginaPrenotazioni/prenotazioni/prenotazioni.php?pianeta=Nettuno">Nettuno</a>
+      <div id="messaggio" style="font-size: 25px; color:white">
+        (Doppio click sul nome per prenotare)
+      </div>
+    </div>
+
+
+    <!-- Comandi/Controlli -->
+    <div id="controls">
+      <label class="set-view">
+      </label>
+      <label class="set-zoom">
+      </label>
+      <label>
+        <input type="radio" class="set-speed" name="scale" checked>
+        <span>Velocità</span>
+      </label>
+      <label>
+        <input type="radio" class="set-size" name="scale">
+        <span>Dimensione</span>
+      </label>
+      <label>
+        <input type="radio" class="set-distance" name="scale">
+        <span>Distanza</span>
+         <a href="../destinazioni.html" type="button" id="pianeti" class="btn btn-lg btn-warning">Info pianeti</a>
+      </label>
+
+    </div>
+    <!-- Pianeti -->
+    <div id="universe" class="scale-stretched">
+      <div id="galaxy">
+        <div id="solar-system" class="earth">
+          <div id="mercury" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Mercurio</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="venus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Venere</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>z
+
+
+          <div id="earth" class="orbit">
+            <div class="pos">
+              <div class="orbit">
+                <div class="pos">
+                  <div class="moon">
+                  </div>
+                </div>
+              </div>
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Terra</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div id="mars" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Marte</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="jupiter" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Giove</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="saturn" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <div class="ring"></div>
+                <dl class="infos">
+                  <dt>Saturno</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="uranus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Urano</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="neptune" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Nettuno</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="sun">
+            <dl class="infos">
+              <dt>Sole</dt>
+              <dd><span></span></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    if (typeof jQuery == 'undefined') {
+      document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </body>
+
+</html>

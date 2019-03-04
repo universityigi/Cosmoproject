@@ -1,0 +1,114 @@
+*:focus{
+  outline: none;
+}
+body {
+  background-color: #000;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+
+/*-------------------------------
+Nav-bar
+-------------------------------*/
+header .main{
+  text-align: center;
+  color: white;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+header.main {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+header.main .intro-text .intro-lead-in {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 22px;
+  margin-bottom: 25px;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+header.main .intro-text .intro-heading {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+/*-------------------------------
+Form
+------------------------------*/
+.form-signin {
+  margin-left:auto;
+  margin-right:auto;
+  width:550px;
+  padding: 10px;
+  margin-top: -80px;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.checkbox {
+  color: white;
+}
+/*-------------------------------
+Footer
+------------------------------*/
+.footer{
+  margin-top:40px;
+  background: #000000;
+  padding: 0.5px;
+  color: #fff;
+}
+.testo{
+  margin-top: 10px;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+/* close commented backslash hack */
+
+*,
+*:before,
+*:after{
+  -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+      box-sizing:border-box;
+}
